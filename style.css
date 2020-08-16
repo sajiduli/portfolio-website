@@ -1,0 +1,337 @@
+/* =======================================================
+===============basic page setup ======================= */
+html{
+    scroll-behavior: smooth;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*menu var css */
+.navbar-toggler-icon {
+    background: #dbcece;
+}
+.navbar-brand{
+    font-size: 30px;
+    font-weight: bold;
+}
+.navbar-light .navbar-brand:hover{
+	color:white;
+}
+.navbar-light .navbar-brand {
+    color: rgb(255, 255, 255);
+}
+.navbar-collapse {
+    flex-grow:0;
+}
+.navbar{
+	height:70px;
+}
+.navbar-light .navbar-nav .nav-link {
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+}
+.navbar-light .navbar-nav .nav-link:hover {
+    color:orange;
+	transition:all .5s ease;
+}
+.bg-light {
+   background-color: #00000052!important;
+}
+.header_content{
+	background: linear-gradient(rgba(158, 147, 143, 0), rgba(26, 97, 154, 0.8)), url(img/1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 600px;
+    background-position: center center;
+	position:relative;
+	clip-path: polygon(100% 0%, 100% 78%, 50% 104%, 0% 77%, 0% 0%);
+	overflow:hidden
+}
+.header_text h2{
+	font-weight:bold;
+	color:#06ffc2;
+	margin-top: 230px;
+}
+.header_text h3{
+	color:orange;
+}
+.header_button{
+	margin-top: 10px;
+    border: 1px solid black;
+    padding: 10px;
+    color: #d4c3c3fc;
+    font-weight: bold;
+    background: #00000017;
+    border-radius: 5px;
+	transition:all 0.5s ease;
+}
+.header_button:hover{
+	background:white;
+	color:black;
+}
+/*Header bottom section*/
+.single_colum{
+	margin-top:50px;
+	padding: 50px;
+    text-align: center;
+    transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+}
+.single_colum a{
+	font-size: 50px;
+}
+.single_colum:hover{
+	box-shadow: 0px 1px 4px 7px #c6bfbf;
+	transform: translateY(-20px);
+}
+/* services section*/
+.services_section{
+	background:#f6f6f6;
+	overflow:hidden;
+}
+.head_text{
+	margin-top:15px;
+}
+.service_blog{
+	margin-top:5px;
+	overflow:hidden;
+}
+.service_blog a{
+	float: left;
+    margin-right: 30px;
+    margin-top: 62px;
+    margin-bottom: 26px;
+	}
+.service_blog p{margin-left:20px}
+
+/* counter action*/
+#counter-section {
+    text-align: center;
+    padding: 80px 0;
+}
+.project-wrap{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+/* Prices section*/
+#preice-section {
+	background: linear-gradient(161deg, #22A5F1 55%, #fff 0%);
+}
+.card-header h3 {
+	color: #333;
+	font-weight: bold;
+	padding: 10px 0 !important;
+}
+.card-body {
+	padding: 40px 0 !important;
+}
+.card-body ul li{
+    display: block !important;
+    color: #000;
+    font-size: 20px;
+    line-height: 25px;
+}
+.card-body ul li span{
+    color: #333;
+    font-size: 40px;
+}
+.card-footer .prch-bt {
+	color: #2fcc2f !important;
+	background: transparent;
+	border: 1px solid #2fcc2f !important;
+	padding: 8px 20px;
+	margin: 10px !important;
+	display: inline-block;
+	border-radius: 25px;
+}
+.card:hover .prch-bt, .active-card .prch-bt{
+    color: #fff !important;
+    background: #2fcc2f;
+}
+.card{
+    transition: 0.5s ease;
+    -webkit-transition: 0.5s ease;
+    -moz-transition: 0.5s ease;
+    -ms-transition: 0.5s ease;
+    -o-transition: 0.5s ease;
+}
+.card:hover, .active-card{
+    box-shadow: -2px -2px 8px 0px rgb(0, 0, 0, 0.5);
+    transform: translateY(-20px);
+    -webkit-transform: translateY(-20px);
+    -moz-transform: translateY(-20px);
+    -ms-transform: translateY(-20px);
+    -o-transform: translateY(-20px);
+}
+.card:hover .card-header h3, .card:hover .card-body ul li span, .active-card .card-header h3, .active-card .card-body ul li span{
+    color: #2fcc2f;
+}
+
+/*  customer section code */
+#customer-section {
+	background: #fff;
+	width: 100%;
+}
+.carousel {
+	margin: 50px 0px;
+}
+.box {
+    background: #fff;
+    padding: 40px;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+    transition: 0.5s ease;
+    -webkit-transition: 0.5s ease;
+    -moz-transition: 0.5s ease;
+    -ms-transition: 0.5s ease;
+    -o-transition: 0.5s ease;
+    box-shadow: 0px -2px 6px 1px rgba(0, 0, 0, 0.3);
+    margin: 10px 0px;
+}
+.box:hover{
+    background: #0074E8;
+}
+.box a{
+    position: relative;
+}
+.box a::after {
+	content: "\f2bd";
+	font-family: "Font Awesome 5 Free";
+	background: #2FCC2F;
+	position: absolute;
+	top: 8px;
+	left: 60px;
+	width: 25px;
+	height: 24px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 50%;
+}
+.box img {
+	width: 80px;
+	height: auto;
+	border-radius: 50%;
+	margin-bottom: 25px;
+}
+.carousel-indicators li {
+	background-color: #22A5F1;
+}
+.carousel-indicators {
+	bottom: -60px;
+}
+/* contact section*/#contact-section {
+	background: linear-gradient(153deg, #fff 50%, #22A5F1 50%);
+}
+form button{
+    opacity: 0;
+    transition: all 0.9s ease !important;
+    -webkit-transition: all 0.9s ease !important;
+    -moz-transition: all 0.9s ease !important;
+    -ms-transition: all 0.9s ease !important;
+    -o-transition: all 0.9s ease !important;
+}
+form:hover button{
+    opacity: 1;
+}
+.navi_link li a{
+	color:white
+}
+
+
+
+
+
+/* =======================================================
+===============Subscribe section code ======================= */
+#subscribe-section{
+    background: #fff;
+}
+.input-group input {
+	border-radius: 100px 0px 0px 100px !important;
+}
+.input-group-append span {
+	border-radius: 0px 100px 100px 0px !important;
+	color: #fff;
+	background: #22A5F1;
+}
+.input-group-text {
+	padding: 0.375rem 3.75rem;
+}
+/* footer section*/
+#footer-section {
+	background: #21A0EA;
+	padding: 40px 0;
+}
+.same-footer h3, .same-footer p {
+	color: #fff;
+}
+.same-footer ul li{
+    display: block;
+}
+.extra-class{
+    padding: 0.375rem 1.75rem;
+}
+
+
+
+
+/* =======================================================
+===============Scroll to top button ======================= */
+.scrollTop span {
+    background: #606060;
+    display: flex;
+    position: fixed;
+    right: 25px;
+    bottom: 25px;
+    width: 40px;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    cursor: pointer;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    transition: all 0.5 ease;
+    -webkit-transition: all 0.5 ease;
+    -moz-transition: all 0.5 ease;
+    -ms-transition: all 0.5 ease;
+    -o-transition: all 0.5 ease;
+}
+.scrollTop span:hover{
+    background: #000;
+}
+.scrollTop span i{
+    color: #fff;
+    transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+}
+.scrollTop span i:hover{
+    color: #f2f2f2;
+}
+#toTop{
+    display: none;
+}
+
+
+
+
+
+
+
